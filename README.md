@@ -1,8 +1,8 @@
-# 🎯 Sports Arbitrage Detection Dashboard
+# Sports Arbitrage Detection Dashboard
 
 A lightweight, browser-based arbitrage detection dashboard that finds risk-free betting opportunities across major sportsbooks.
 
-## ✨ Features
+## Features
 
 - **Live Odds Fetching**: Integrates with The Odds API to fetch real-time odds from major sportsbooks
 - **Arbitrage Detection**: Automatically detects 2-way and 3-way arbitrage opportunities
@@ -18,7 +18,7 @@ A lightweight, browser-based arbitrage detection dashboard that finds risk-free 
 - **Auto-Refresh**: Optional auto-refresh every 60 seconds for live opportunities
 - **Beautiful UI**: Modern, responsive dashboard with real-time updates
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 sports-arb-app/
@@ -39,7 +39,7 @@ sports-arb-app/
 └── README.md
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -99,7 +99,7 @@ sports-arb-app/
 
    The app will be available at `http://localhost:3000`
 
-## 📖 API Endpoints
+## API Endpoints
 
 ### Backend API
 
@@ -123,7 +123,7 @@ curl "http://localhost:8000/arbitrage/live?sport=americanfootball_nfl&markets=h2
 curl -X POST -F "file=@data/sample_odds.json" http://localhost:8000/upload
 ```
 
-## 🧮 Arbitrage Calculation
+## Arbitrage Calculation
 
 ### Two-Way Markets (Moneyline)
 
@@ -142,7 +142,7 @@ Profit% = (1 / (1/Odds_A + 1/Odds_B) - 1) × 100
 **Example:**
 - DraftKings: Team A @ 2.10
 - FanDuel: Team B @ 2.05
-- Calculation: 1/2.10 + 1/2.05 = 0.964 < 1 ✅
+- Calculation: 1/2.10 + 1/2.05 = 0.964 < 1
 - Profit: 3.7%
 
 ### Three-Way Markets (Soccer with Draw)
@@ -167,20 +167,20 @@ Stake_B = Total - Stake_A
 Each stake proportional to 1/odds (inverse of odds)
 ```
 
-## 📊 Supported Markets
+## Supported Markets
 
 - **h2h** (Head-to-Head / Moneyline): Which team will win
 - **spreads**: Point spread betting
 - **totals**: Over/Under total points
 
-## 🌎 Supported Regions
+## Supported Regions
 
 - **US**: American sportsbooks (DraftKings, FanDuel, BetMGM, Caesars, etc.)
 - **UK**: British bookmakers (Bet365, William Hill, Ladbrokes, etc.)
 - **EU**: European bookmakers
 - **AU**: Australian bookmakers
 
-## 📝 Data Format
+## Data Format
 
 ### JSON Upload Format
 
@@ -219,7 +219,7 @@ Each stake proportional to 1/odds (inverse of odds)
 }
 ```
 
-## 🎨 UI Features
+## UI Features
 
 ### Live Odds View
 - Real-time odds from The Odds API
@@ -239,7 +239,7 @@ Each stake proportional to 1/odds (inverse of odds)
 - Instant arbitrage analysis
 - Detailed formatting examples
 
-## 🔧 Utilities
+## Utilities
 
 The `backend/utils/arbitrage.py` module provides:
 
@@ -250,7 +250,7 @@ The `backend/utils/arbitrage.py` module provides:
 - `calculate_implied_probability()` - Get implied probability from odds
 - `calculate_kelly_criterion()` - Kelly Criterion bet sizing
 
-## 🚀 Deployment
+## Deployment
 
 ### Backend (Python/FastAPI)
 
@@ -267,7 +267,7 @@ The `backend/utils/arbitrage.py` module provides:
 - **Netlify**: Easy deployment, free tier
 - **Cloudflare Pages**: Fast global CDN
 
-## 🔐 Environment Variables
+## Environment Variables
 
 ```bash
 # Backend
@@ -277,7 +277,7 @@ ODDS_API_KEY=your_api_key_here
 NEXT_PUBLIC_API_URL=https://your-backend-url.com
 ```
 
-## 📚 Future Enhancements
+## Future Enhancements
 
 - [ ] Historical arbitrage tracking and analytics
 - [ ] Email/Discord alerts for high-profit opportunities
@@ -289,7 +289,7 @@ NEXT_PUBLIC_API_URL=https://your-backend-url.com
 - [ ] Multi-currency support
 - [ ] Odds movement tracking
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 **This tool is for educational and informational purposes only.**
 
@@ -300,21 +300,21 @@ NEXT_PUBLIC_API_URL=https://your-backend-url.com
 - This is not financial advice
 - Gamble responsibly
 
-## 📄 License
+## License
 
 MIT License - feel free to use this project for personal or commercial purposes.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📞 Support
+## Support
 
 For issues or questions:
 - Create an issue in the repository
 - Check The Odds API documentation: https://the-odds-api.com/liveapi/guides/v4/
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **The Odds API** for providing sports betting odds data
 - **FastAPI** for the excellent Python web framework
@@ -324,5 +324,5 @@ For issues or questions:
 
 ---
 
-**Built with ❤️ for sports betting enthusiasts**
+**Built for sports betting enthusiasts**
 
