@@ -1,0 +1,74 @@
+{
+  "games": [
+    {
+      "match": "Eagles vs Giants",
+      "sport": "NFL",
+      "date": "2025-10-15",
+      "bookmakers": [
+        {
+          "name": "FanDuel",
+          "home": 2.10,
+          "away": 1.82
+        },
+        {
+          "name": "DraftKings",
+          "home": 1.95,
+          "away": 2.05
+        },
+        {
+          "name": "BetMGM",
+          "home": 2.05,
+          "away": 1.90
+        }
+      ]
+    },
+    {
+      "match": "Lakers vs Warriors",
+      "sport": "NBA",
+      "date": "2025-10-16",
+      "bookmakers": [
+        {
+          "name": "Caesars",
+          "home": 1.85,
+          "away": 2.15
+        },
+        {
+          "name": "FanDuel",
+          "home": 1.90,
+          "away": 2.00
+        },
+        {
+          "name": "DraftKings",
+          "home": 1.88,
+          "away": 2.05
+        }
+      ]
+    },
+    {
+      "match": "Manchester United vs Liverpool",
+      "sport": "Soccer",
+      "date": "2025-10-20",
+      "bookmakers": [
+        {
+          "name": "Bet365",
+          "home": 2.75,
+          "draw": 3.40,
+          "away": 2.60
+        },
+        {
+          "name": "William Hill",
+          "home": 2.80,
+          "draw": 3.30,
+          "away": 2.55
+        },
+        {
+          "name": "Unibet",
+          "home": 2.70,
+          "draw": 3.50,
+          "away": 2.65
+        }
+      ]
+    }
+  ]
+}
+
